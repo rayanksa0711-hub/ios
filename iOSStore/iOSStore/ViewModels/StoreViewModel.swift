@@ -47,8 +47,10 @@ final class StoreViewModel: ObservableObject {
     }
 }
 
-#if DEBUG
+// Sample data for SwiftUI previews and testing.
+// Kept outside #if DEBUG so it is always available to the compiler.
 extension StoreViewModel {
+    @MainActor
     static var preview: StoreViewModel {
         let vm = StoreViewModel()
         vm.items = [
@@ -84,4 +86,3 @@ extension StoreViewModel {
         return vm
     }
 }
-#endif
