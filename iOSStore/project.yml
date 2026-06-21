@@ -1,0 +1,43 @@
+# XcodeGen specification for iOSStore
+# Run: xcodegen generate
+# Requires: https://github.com/yonaskolb/XcodeGen
+
+name: iOSStore
+targets:
+  iOSStore:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: iOSStore
+    settings:
+      base:
+        INFOPLIST_FILE: iOSStore/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.yourcompany.iosstore
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_VERSION: "5.0"
+        DEVELOPMENT_TEAM: ""
+        CODE_SIGN_STYLE: Automatic
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        INFOPLIST_KEY_CFBundleDisplayName: "iOS Store"
+        INFOPLIST_KEY_LSApplicationCategoryType: "public.app-category.utilities"
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+        INFOPLIST_KEY_UILaunchStoryboardName: LaunchScreen
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown"
+        TARGETED_DEVICE_FAMILY: "1,2"
+    info:
+      path: iOSStore/Info.plist
+      properties:
+        R2_PUBLIC_URL: https://pub-xxxxxxxxxxxxxxxxxxxxxxxxxxxx.r2.dev
+    dependencies:
+      - sdk: UIKit.framework
+      - sdk: SwiftUI.framework
+    scheme:
+      iOSStore:
+        build:
+          targets:
+            iOSStore: all
