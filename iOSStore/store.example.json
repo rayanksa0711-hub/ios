@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "id": "com.example.mygame",
+      "name": "My Awesome Game",
+      "developer": "Example Studio",
+      "category": "game",
+      "description": "A fast-paced arcade game with native iOS controls.",
+      "icon_url": "https://pub-xxxxxxxxxxxxxxxxxxxxxxxxxxxx.r2.dev/icons/mygame.png",
+      "ipa_url": "https://pub-xxxxxxxxxxxxxxxxxxxxxxxxxxxx.r2.dev/ipas/mygame.ipa",
+      "bundle_id": "com.example.mygame",
+      "version": "1.2.0",
+      "size_bytes": 67108864,
+      "screenshots": [
+        "https://pub-xxxxxxxxxxxxxxxxxxxxxxxxxxxx.r2.dev/screenshots/mygame-1.png",
+        "https://pub-xxxxxxxxxxxxxxxxxxxxxxxxxxxx.r2.dev/screenshots/mygame-2.png"
+      ],
+      "telegram_description": "This is the full description pulled from Telegram, including features, changelog, and notes."
+    },
+    {
+      "id": "com.example.myapp",
+      "name": "My Utility App",
+      "developer": "Example Dev",
+      "category": "app",
+      "description": "A productivity utility built for iOS.",
+      "icon_url": "https://pub-xxxxxxxxxxxxxxxxxxxxxxxxxxxx.r2.dev/icons/myapp.png",
+      "ipa_url": "https://pub-xxxxxxxxxxxxxxxxxxxxxxxxxxxx.r2.dev/ipas/myapp.ipa",
+      "bundle_id": "com.example.myapp",
+      "version": "2.0.1",
+      "size_bytes": 33554432,
+      "screenshots": [],
+      "telegram_description": "Utility app description from Telegram."
+    }
+  ]
+}
